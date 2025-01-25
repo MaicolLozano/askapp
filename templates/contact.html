@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+{%block title%}
+Contact
+{%endblock%}
+
+{%block content%}
+    <div class="container mt-4">
+        <h1>Contact</h1>
+        <p>You can contact us here</p>
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">message subject</label>
+                <input type="text" class="form-control" name="subject" id="exampleFormControlInput1" placeholder="subject">
+             </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">message</label>
+                <textarea class="form-control" name="message" placeholder="Leave a comment here" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+{%endblock%}

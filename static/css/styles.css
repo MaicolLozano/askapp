@@ -1,0 +1,43 @@
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.nav-link {
+    color: black; 
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav .btn-dark {
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand {
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.footer {
+    height: 30px;
+}
+
+.footer .btn-dark {
+    background-color: black;
+    color: white;
+}
+
+.footer .btn-dark:hover {
+    background-color: black;
+    color: white;
+}
