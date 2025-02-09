@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ question[1] }}
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">{{ question[1] }}</h2>
+                {% if question[2] %}
+                    <img src="/{{ question[2] }}" class="img-fluid mb-3" alt="Question image">
+                {% endif %}
+                <p class="card-text">{{ question[3] }}</p>
+                <p class="card-text">Author: {{ question[7] }}</p>
+                <small class="text-muted">Created at: {{ question[5] }}</small>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="container">
+        <h1>Make your answer</h1>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="body">Description</label>
+                <textarea class="form-control" name="body" id="body" cols="30" rows="10" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+<br>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Answers</h3>
+                {% for answer in answers %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">{{ answer[1] }}</p>
+                            <small class="text-muted">Created at: {{ answer[3] }}</small>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+
+{%block title%}
+Admin
+{%endblock%}
+
+{%block content%}
+    <div class="container mt-4">
+        <h1>Admin</h1>
+        <p>Only admin can see this page</p>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Number of users</h5>
+                        <p class="card-text">{{ count_users }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Number of questions</h5>
+                        <p class="card-text">{{ count_questions }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endblock%}
